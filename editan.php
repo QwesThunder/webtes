@@ -12,7 +12,7 @@ $nama=$_SESSION["nama"];
   
   include('koneksi.php');
   
-  $id = $_GET['id'];
+  $id = abs($_GET['id']);
   
   $query = "SELECT * FROM siswa WHERE id = $id LIMIT 1";
 
